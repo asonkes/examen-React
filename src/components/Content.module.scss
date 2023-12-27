@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-columns: repeat(3, 350px);
+    gap: 20px;
+}
+
+.content-card {
+    width: 1130px;
+}
