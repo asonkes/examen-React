@@ -22,7 +22,7 @@
 
 .br {
     @include mixin.xs {
-        border: 4px solid red;
+        border: 4px solid green;
     }
 
     @include mixin.sm {

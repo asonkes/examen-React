@@ -73,7 +73,7 @@ export const data = [
         image: 'https://images.unsplash.com/photo-1517093602195-b40af9688b46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDIyfHxmb29kfGVufDB8fDB8fHww'
     },
     {
-        title: 'Salade de chou-fleur avec grenades',
+        title: 'Chou-fleur avec grenades',
         _id: '658f2a781e1f85b6dd99e550',
         image: 'https://images.unsplash.com/photo-1510629954389-c1e0da47d414?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },

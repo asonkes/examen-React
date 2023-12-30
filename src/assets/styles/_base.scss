@@ -1,3 +1,5 @@
+@use 'mixins' as mixin;
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +26,22 @@ img {
     max-width: 1200px;
     margin: auto;
     width: 100%;
+
+    @include mixin.lg-lt {
+        max-width: 820px;
+    }
+
+    @include mixin.md-lt {
+        max-width: 770px;
+    }
+
+    @include mixin.sm-lt {
+        max-width: 450px;
+    }
+
+    @include mixin.xs {
+        max-width: auto;
+    }
 }
 
 h1 {
