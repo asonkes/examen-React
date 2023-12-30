@@ -10,7 +10,7 @@ export default function Header() {
        </div>
        
        <ul>
-        <button className="mr-5 btn btn-reverse-primary">
+        <button className="mr-15 btn btn-reverse-primary">
         <i className="fa-solid fa-basket-shopping mr-5"></i>
         Panier
         </button>
