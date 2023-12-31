@@ -1,3 +1,5 @@
+@use '../assets/styles/mixins' as mixin;
+
 header {
     padding: 10px 20px;
     box-shadow: var(--box-shadow-nav);
@@ -6,5 +8,20 @@ header {
 
     img {
         max-width: 140px;
+    }
+
+    .headerList {
+        @include mixin.xs {
+            display: none;
+        }
+    }
+
+    .headerBurger {
+        display: none;
+
+        @include mixin.xs {
+            display: block;
+            font-size: 22px;
+        }
     }
 }
