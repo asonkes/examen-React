@@ -5,7 +5,7 @@
     transition: 0.2s;
 
     &:hover {
-        opacity: 0.8;
+        opacity: 0.5;
     }
 }
 
@@ -28,4 +28,12 @@
 
 .text-primary {
     color: var(--primary);
+}
+
+.calc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }

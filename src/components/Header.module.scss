@@ -1,6 +1,8 @@
 @use '../assets/styles/mixins' as mixin;
 
 header {
+    position: relative;
+    height: 75px;
     padding: 10px 20px;
     box-shadow: var(--box-shadow-nav);
     color: var(--primary);
@@ -18,6 +20,12 @@ header {
 
     .headerBurger {
         display: none;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
 
         @include mixin.xs {
             display: block;
