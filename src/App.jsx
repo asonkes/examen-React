@@ -1,13 +1,13 @@
-import Header from "./components/Header";
-import Content from "./components/Content"; 
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Homepage from "./Pages/Homepage/Homepage"; 
+import Footer from "./components/Footer/Footer";
 import styles from "./App.module.scss";
 
 export default function App() {
   return (
     <div className={`d-flex flex-column ${styles.appContainer}`}>
     <Header />
-    <Content />
+    <Homepage />
     <Footer />
     </div>
   );

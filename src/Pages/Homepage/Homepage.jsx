@@ -1,9 +1,9 @@
-import styles from "./Content.module.scss";
-import Recipe from "./Recipe";
+import styles from "./Homepage.module.scss";
+import Recipe from "./components/Recipe/Recipe";
 /**
  * Import nommé, donc on a met le nom de l'import dans des accolades.
  */
-import { data } from "../data/recipes"
+import { data } from "../../data/recipes"
 import { useState } from "react";
 
 export default function Content() {
