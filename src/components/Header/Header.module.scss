@@ -29,7 +29,7 @@ header {
 
         @include mixin.xs {
             display: block;
-            font-size: 22px;
+            fill: var(--primary);
         }
     }
 }

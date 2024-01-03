@@ -16,13 +16,19 @@ export default function Header() {
        
         <div className={styles.headerList}>
            <button className="mr-15 btn btn-reverse-primary" >
-              <i className="fa-solid fa-basket-shopping mr-5"></i>
+              <img className="mr-5" src="assets/icones/Shopping-Cart-01-16.png" alt="Icone pour le panier" />
               Panier
            </button>
            <button className="btn btn-primary">Connexion</button>
        </div>
 
-       <i onClick={() => setShowMenu(true)} className={`fa-solid fa-bars ${styles.headerBurger}`}></i>
+       <img 
+       onClick={() => setShowMenu(true)} 
+       className= {styles.headerBurger} 
+       src="assets/icones/Row-22.png" 
+       alt="Icone pour le menu Burger"
+       />
+
        {showMenu && 
         <>
         <div onClick={ () => setShowMenu(false)} className="calc"></div>
