@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import Homepage from "./Pages/Homepage/Homepage"; 
+import Homepage from "./Pages/Homepage/Home"; 
 import Footer from "./components/Footer/Footer";
 import styles from "./App.module.scss";
 

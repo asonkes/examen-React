@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
 import logo from "../../assets/images/cookchef.webp";
 import { useState } from "react";
-import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
+import HeaderMobile from "./components/HeaderMobile/HeaderMobile";
 
 export default function Header() {
 
@@ -14,7 +14,7 @@ export default function Header() {
           <img className="m-10" src={logo} alt="logo du restaurant" />
        </div>
        
-       <div className={styles.headerList}>
+        <div className={styles.headerList}>
            <button className="mr-15 btn btn-reverse-primary" >
               <i className="fa-solid fa-basket-shopping mr-5"></i>
               Panier
@@ -26,7 +26,7 @@ export default function Header() {
        {showMenu && 
         <>
         <div onClick={ () => setShowMenu(false)} className="calc"></div>
-          <HeaderMenu />
+          <HeaderMobile />
         </>
         }
     </header>

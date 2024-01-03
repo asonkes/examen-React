@@ -1,6 +1,6 @@
 // Se trouve dans "components" car c'est un composant du "Header"
 
-import styles from "./HeaderMenu.module.scss";
+import styles from "./HeaderMobile.module.scss";
 
 export default function HeaderMenu() {
     return (
