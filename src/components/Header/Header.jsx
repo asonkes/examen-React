@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from "./Header.module.scss";
 import logo from "../../assets/images/cookchef.webp";
 import { useState } from "react";
@@ -16,13 +17,13 @@ export default function Header() {
       <nav>
          <ul className="d-flex flex-row mr-15">
             <li className="mr-15">
-               <a href="/">Accueil</a>
+               <Link to="/Pages/Homepage/Home">Accueil</Link>
             </li>
             <li className="mr-15">
-               <a href="/">Présentation</a>
+               <Link to="/Pages/Presentation">Présentation</Link>
             </li>
             <li className="mr-15">
-               <a href="/Pages/Contact.jsx">Contact</a>
+               <Link to="/Pages/Contact">Contact</Link>
             </li>
          </ul>
       </nav>
