@@ -17,13 +17,13 @@ export default function Header() {
       <nav>
          <ul className="d-flex flex-row mr-15">
             <li className="mr-15">
-               <Link to="/Pages/Homepage/Home">Accueil</Link>
+               <Link to="/Pages/HomePage/Home">Accueil</Link>
             </li>
             <li className="mr-15">
-               <Link to="/Pages/Presentation">Présentation</Link>
+               <Link to="/Pages/PresentationPage/Presentation">Présentation</Link>
             </li>
             <li className="mr-15">
-               <Link to="/Pages/Contact">Contact</Link>
+               <Link to="/Pages/ContactPage/Contact">Contact</Link>
             </li>
          </ul>
       </nav>
