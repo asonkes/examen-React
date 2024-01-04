@@ -1,10 +1,15 @@
-// Se trouve dans "components" car c'est la css d'un composant du "Header"
+@use '../../../../assets/styles/mixins' as mixin;
 
 .menuContainer {
+    display: none;
     position: absolute;
     top: 88px;
     right: 10px;
     width: 200px;
+
+    @include mixin.sm-lt {
+        display: block;
+    }
 
     li {
         cursor: pointer;

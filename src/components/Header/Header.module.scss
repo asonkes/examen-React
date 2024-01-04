@@ -8,13 +8,33 @@ header {
     color: var(--primary);
     background-color: white;
 
-    img {
+    .headerLogo {
         max-width: 140px;
+        cursor: pointer;
     }
 
     .headerList {
-        @include mixin.xs {
+        @include mixin.sm-lt {
             display: none;
+        }
+
+
+    }
+
+    .icone {
+        fill: var(--primary);
+    }
+
+    nav {
+        @include mixin.sm-lt {
+            display: none;
+        }
+
+        li {
+            a {
+                color: var(--primary);
+                text-decoration: none;
+            }
         }
     }
 
@@ -27,8 +47,9 @@ header {
             transition: opacity 0.2s;
         }
 
-        @include mixin.xs {
+        @include mixin.sm-lt {
             display: block;
+            height: 25px;
             fill: var(--primary);
         }
     }
