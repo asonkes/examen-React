@@ -11,19 +11,8 @@
     .contactChildren {
         height: 100%;
 
-        h1 {
-            @include mixin.xs {
-                justify-content: center;
-                text-align: center;
-            }
-        }
-
         form {
-            @include mixin.sm {
-                align-items: center;
-            }
-
-            @include mixin.xs {
+            @include mixin.sm-lt {
                 align-items: center;
             }
 
@@ -40,11 +29,15 @@
                 border-radius: 20px;
                 border: 1px solid var(--primary);
 
-                @include mixin.sm {
-                    width: 60%;
+                @include mixin.lg {
+                    width: 40%;
                 }
 
-                @include mixin.xs {
+                @include mixin.md {
+                    width: 40%;
+                }
+
+                @include mixin.sm-lt {
                     width: 70%;
                 }
             }

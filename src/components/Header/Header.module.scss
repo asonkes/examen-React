@@ -32,6 +32,13 @@ header {
             a {
                 color: var(--primary);
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-style: wavy;
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 10px;
+                }
             }
         }
     }
