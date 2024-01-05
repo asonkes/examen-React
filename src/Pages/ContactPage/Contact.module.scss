@@ -1,0 +1,63 @@
+@use '../../assets/styles/mixins' as mixin;
+
+.contact {
+    max-width: 100%;
+    height: calc(100vh - 134px);
+    background-image: url(../../assets/images/femme-occupee.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .contactChildren {
+        height: 100%;
+
+        h1 {
+            @include mixin.xs {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        form {
+            @include mixin.sm {
+                align-items: center;
+            }
+
+            @include mixin.xs {
+                align-items: center;
+            }
+
+            input {
+                &:hover {
+                    opacity: 0.7;
+                    transition: opacity 0.2s;
+                }
+            }
+
+            input,
+            button {
+                width: 30%;
+                border-radius: 20px;
+                border: 1px solid var(--primary);
+
+                @include mixin.sm {
+                    width: 60%;
+                }
+
+                @include mixin.xs {
+                    width: 70%;
+                }
+            }
+
+            button {
+                background-color: white;
+
+                &:hover {
+                    background-color: var(--primary);
+                    transition: background-color 2s;
+                    color: white;
+                }
+            }
+        }
+    }
+}

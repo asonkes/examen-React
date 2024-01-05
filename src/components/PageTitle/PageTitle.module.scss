@@ -1,0 +1,25 @@
+@use '../../assets/styles/mixins' as mixin;
+
+.pageTitle {
+    padding: 30px;
+}
+
+.pageTitleRight {
+    text-align: right;
+}
+
+.pageTitleLeft {
+    text-align: left;
+}
+
+.pageTitleCenter {
+    text-align: center;
+}
+
+.pageTitleRight,
+.pageTitleLeft,
+.pageTitleCenter {
+    @include mixin.sm {
+        text-align: center;
+    }
+}
