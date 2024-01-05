@@ -19,7 +19,7 @@ export default function Header() {
       <nav>
          <ul className="d-flex flex-row mr-15">
             <li className="mr-15">
-               <Link to="/Pages/HomePage/Home">Accueil</Link>
+               <Link to="/">Accueil</Link>
             </li>
             <li className="mr-15">
                <Link to="/Pages/PresentationPage/Presentation">Présentation</Link>
