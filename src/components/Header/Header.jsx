@@ -11,7 +11,9 @@ export default function Header() {
    return (
       <header className={ `d-flex flex-row align-items-center ${styles.header}`} >
           <div className="flex-fill">
-             <img className={`m-10 ${styles.headerLogo}`} src={logo} alt="logo du restaurant" />
+            <Link to="/">
+            <img className={`m-10 ${styles.headerLogo}`} src={logo} alt="logo du restaurant" />
+            </Link>
           </div>
 
       <nav>
