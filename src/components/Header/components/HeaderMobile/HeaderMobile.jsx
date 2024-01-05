@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function HeaderMenuMobile() {
     return (
         <div className="headerMobile">
-            <ul className={`d-flex flex-column card p-20 ${styles.menuContainer}`}>
+            <ul className={`card p-20 ${styles.menuContainer}`}>
                 <Link to="/" >Accueil</Link>
                 <Link to="/Pages/PresentationPage/Presentation" >Présentation</Link>
                 <Link to="/Pages/ContactPage/Contact" >Contact</Link>

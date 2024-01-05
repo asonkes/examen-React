@@ -9,6 +9,8 @@
 
     @include mixin.sm-lt {
         display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     a {
