@@ -1,6 +1,7 @@
 @use '../../assets/styles/mixins' as mixin;
 
 .pageTitle {
+    font-family: var(--font-family-h1);
     padding: 30px;
 }
 
