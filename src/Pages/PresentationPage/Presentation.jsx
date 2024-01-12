@@ -29,7 +29,7 @@ export default function Content() {
 
   return (
     <div className="flex-fill container">
-      <PageTitle title="Découvrez nos recettes" align="center" />
+      <PageTitle title="Discover your recipes" align="center" />
 
       <div className={`card p-20 m-20 ${styles.contentCard}`}>
         <ResponsiveElement>
@@ -49,7 +49,7 @@ export default function Content() {
             onInput={handleInput}
             className={`m-10 p-10 ${styles.contentSearch}`}
             type="text"
-            placeholder="Rechercher"
+            placeholder="Research"
           />
         </ResponsiveElement>
 

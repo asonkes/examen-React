@@ -11,6 +11,17 @@
     }
 }
 
+.btn-special {
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 .btn-primary {
     background-color: var(--primary);
     color: white;
