@@ -36,7 +36,8 @@ export default function Presentation() {
             
             {/** Le "slice" permet de limiter l'affichage des recettes à 3 */}
             {recipes.slice(-3).map((r) => (
-              <Recipe key={r.id} title={r.title} image={r.image} />
+              <Recipe key={r.id} title={r.title} image={r.image} 
+              />
             ))}
           </div>
         </div>

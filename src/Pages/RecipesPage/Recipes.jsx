@@ -1,6 +1,6 @@
 // Donc ici, c'est la page qui permettra d'afficher les recettes, en fonction de l'api...
 // Une page, en fonction de l'id de la recette qu'on choisit...
 
-export default function RecipeId() {
-    return 
+export default function Hello() {
+    return <h1>Bienvenu sur la page consacrée au détail des recettes</h1>
 }
