@@ -1,6 +1,10 @@
-.Error {
-    background-color: red;
+.error {
     max-width: 100%;
-    height: 100%;
+    height: calc(100vh - 232px);
+    background-image: url('../../assets/images/error.webp');
 
+    .errorButton {
+        max-width: 100%;
+        height: 100%;
+    }
 }
