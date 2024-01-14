@@ -15,16 +15,14 @@ export default function Recipe({title, image}) {
     return (
         <div onClick={handleClick} className={styles.recipe}>
             <div className={styles.imageContainer}>
-                <img src={image} alt="Recette du menu" />
+                <img src={image} alt="Menu Recipe" />
             </div>
             <div className={`p-10 d-flex flex-column align-items-center justify-content-center ${styles.recipeTitle}`}>
-                <h3 className="mb-10">{ title }</h3>
+                <h3 className="mt-55 mb-10">{ title }</h3>
 {/** Ici, on a fait une condition ternaire, si c'est liké, alors la couleur change, ausinon, c'est faux, donc la couleur part */}
-                <div className="m-2">
                 <i className={`fa-solid fa-heart ${liked ? "text-primary" : ""}`}></i>
-                </div>
                 <Link to="/Pages/RecipesPage/Recipes" >
-                <button className="btn btn-primary">Discover the recipe</button>
+                <button className="btn btn-primary mt-10">Discover the recipe</button>
                 </Link>
             </div>
         </div>
