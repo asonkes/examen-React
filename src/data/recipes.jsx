@@ -1,6 +1,5 @@
 // Ici, permet de créer un dossier où il va y avoir la liste des recettes.
 // Sert tant qu'on ne va pas chercher la liste des recettes sur une base de données, une API ou via SYMFO...
-
 {/**
 export const data = [
     {
@@ -94,4 +93,6 @@ export const data = [
         image: 'https://images.unsplash.com/photo-1505253304499-671c55fb57fe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
 ]
+
 */}
+
