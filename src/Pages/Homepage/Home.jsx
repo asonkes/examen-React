@@ -8,19 +8,19 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const [recipes, setRecipes] = useState([]);
 
-  useEffect(() => {
-    async function fetchRecipes() {
-      try {
-        const data = await getRandomRecipes(18);
-        setRecipes(data);
-      } catch (error) {
-        console.error('Error fetching recipes:', error);
-        // Gérer les erreurs ici
-      }
+  const fetchRecipes = async () => {
+    try {
+      const data = await getRandomRecipes();
+      setRecipes(data);
+    } catch (error) {
+      console.error('Erreur', error);
+      // Gérer les erreurs ici
     }
-
-    fetchRecipes();
-  }, []); // Exécuté à chaque changement de filter
+   }
+    useEffect(() => {
+     fetchRecipes();
+  
+    }, []);
 
   return (
     <div className={styles.home}>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="grid m-10">
             
             {/** Le "slice" permet de limiter l'affichage des recettes à 3 */}
-            {recipes.slice(-3).map((r) => (
+            {recipes.slice(0,3).map((r) => (
               <Recipe key={r.name} title={r.name} image={r.image} 
               />
             ))}

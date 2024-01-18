@@ -16,19 +16,19 @@ export default function Presentation() {
   const [recipes, setRecipes] = useState([]);
   const [filter, setFilter] = useState("");
 
+  const fetchRecipes = async () => {
+  try {
+    const data = await getRandomRecipes(18);
+    setRecipes(data);
+  } catch (error) {
+    console.error('Erreur', error);
+    // Gérer les erreurs ici
+  }
+ }
   useEffect(() => {
-    async function fetchRecipes() {
-      try {
-        const data = await getRandomRecipes(18, filter);
-        setRecipes(data);
-      } catch (error) {
-        console.error('Error fetching recipes:', error);
-        // Gérer les erreurs ici
-      }
-    }
+   fetchRecipes();
 
-    fetchRecipes();
-  }, [filter]); // Exécuté à chaque changement de filter
+  }, []);
 
   function handleInput(e) {
     const filter = e.target.value;
