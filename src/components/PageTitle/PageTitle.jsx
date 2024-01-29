@@ -1,6 +1,6 @@
 import styles from './PageTitle.module.scss';
 
-export default function PageTitle({title, align}) {
+export default function PageTitle({title, align, className, ...props}) {
     const alignement = () => {
         if(align === "left") {
             return styles.pageTitleLeft
@@ -11,5 +11,5 @@ export default function PageTitle({title, align}) {
         }
     }
 
-    return <h1 className={`${styles.pageTitle} ${alignement()}`}>{title}</h1>
+    return <h1 {...props} className={`${styles.pageTitle} ${alignement()} ${className ? className : ('')}`}>{title}</h1>
 }

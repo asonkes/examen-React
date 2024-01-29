@@ -27,7 +27,6 @@ export default function Presentation() {
  }
   useEffect(() => {
    fetchRecipes();
-
   }, []);
 
   function handleInput(e) {
@@ -66,7 +65,7 @@ export default function Presentation() {
           {recipes
             .filter((r) => normalizeString(r.name).startsWith(filter))
             .map((r) => (
-              <Recipe key={r.name} title={r.name} image={r.image} />
+              <Recipe key={r.name} id={r.id} title={r.name} image={r.image}/>
             ))}
         </div>
       </div>

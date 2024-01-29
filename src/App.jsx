@@ -8,6 +8,7 @@ import ErrorPage from './Pages/ErrorPage/Error';
 import Recipes from './Pages/RecipesPage/Recipes';
 
 export default function App() {
+
   return (
     <>
     <Header />
@@ -15,7 +16,7 @@ export default function App() {
        <Route path="/" element={<Home />} />
        <Route path="/Pages/PresentationPage/Presentation" element={<Presentation />} />
        <Route path="/Pages/ContactPage/Contact" element={<Contact />} />
-       <Route path="/Pages/RecipesPage/Recipes" element={<Recipes />} />
+       <Route path="/Pages/RecipesPage/Recipes/:id" element={<Recipes />} />
 
       {/* Route wildcard pour la page d'erreur */}
       <Route path="*" element={<ErrorPage />} />

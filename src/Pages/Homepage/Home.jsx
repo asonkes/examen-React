@@ -5,6 +5,7 @@ import Recipe from "../../components/Recipe/Recipe";
 import { getRandomRecipes } from "../../services/api";
 import { Link } from "react-router-dom";
 
+
 export default function Home() {
   const [recipes, setRecipes] = useState([]);
 
@@ -50,10 +51,11 @@ export default function Home() {
           <div className="grid m-10">
             
             {/** Le "slice" permet de limiter l'affichage des recettes à 3 */}
-            {recipes.slice(0,3).map((r) => (
-              <Recipe key={r.name} title={r.name} image={r.image} 
+             {recipes.slice(0,3).map((r) => (
+              <Recipe key={r.name} id={r.id} title={r.name} image={r.image} 
               />
             ))}
+             
           </div>
         </div>
       </div>

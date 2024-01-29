@@ -1,3 +1,4 @@
+// Page "Contact"
 import PageTitle from '../../components/PageTitle/PageTitle';
 import styles from './contact.module.scss';
 

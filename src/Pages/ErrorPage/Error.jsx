@@ -1,3 +1,4 @@
+// Page d'erreur
 import styles from "./Error.module.scss";
 import PageTitle from '../../components/PageTitle/PageTitle';
 import { Link } from "react-router-dom";

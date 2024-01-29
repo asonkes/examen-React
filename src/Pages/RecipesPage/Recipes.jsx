@@ -1,6 +1,34 @@
-// Donc ici, c'est la page qui permettra d'afficher les recettes, en fonction de l'api...
-// Une page, en fonction de l'id de la recette qu'on choisit...
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { getRecipeDetails } from "../../services/api";
 
-export default function Hello() {
-    return <h1>Bienvenu sur la page consacrée au détail des recettes</h1>
+export default function Recipes() {
+  const { id } = useParams(); // Récupère l'ID de l'URL
+
+  const [recipe, setRecipe] = useState();
+
+  const fetchRecipeDetails = async (id) => {
+    try {
+      const data = await getRecipeDetails(id);
+      setRecipe(data);
+    } catch (error) {
+      console.error('Erreur', error);
+      // Gérer les erreurs ici
+    } 
+  };
+
+  useEffect(() => {
+      fetchRecipeDetails(id);
+  }, [id]);
+
+  console.log("Id de la recette", recipe);
+
+  return (
+    <div className="flex-fill container">
+      <div className="card p-20 m-20">
+        <p>{id}</p>
+        
+      </div>
+    </div>
+  );
 }

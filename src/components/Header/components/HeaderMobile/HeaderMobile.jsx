@@ -1,5 +1,4 @@
-// Se trouve dans "components" car c'est un composant du "Header"
-
+{/** Permet d'avoir le menu en format "mobile" */}
 import styles from "./HeaderMobile.module.scss";
 import { Link } from 'react-router-dom';
 

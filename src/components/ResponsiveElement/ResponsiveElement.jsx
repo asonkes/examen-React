@@ -1,3 +1,4 @@
+// Pemret de pouvoir importer le fait qu'un élément soit "responsive"
 export default function ResponsiveElement({children}) {
 
     return (
