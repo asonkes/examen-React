@@ -24,7 +24,7 @@ export default function Presentation() {
     console.error('Erreur', error);
     // Gérer les erreurs ici
   }
- }
+ };
   useEffect(() => {
    fetchRecipes();
   }, []);

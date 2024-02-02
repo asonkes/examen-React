@@ -34,8 +34,6 @@ export async function getRandomRecipes(limit = 18, query = "", id = "") {
   }
 }
 
-
-
 // Fonction qui effectue une requête GET pour les détails d'une recette spécifique
 export async function getRecipeDetails(id) {
     try {
@@ -45,14 +43,19 @@ export async function getRecipeDetails(id) {
       });
   
       const response = await fetch(`${baseURL}${endpoint}?${params}`);
+      console.log("response ICI", response);
       const data = await response.json();
+      console.log("data ICI", data);
   
       if (response.ok) {
-        console.log("data", data);
+        
+    console.log('id dans fonction', id, data.id);
         return {
           id: data.id,
           name: data.title,
-          image: data.image
+          image: data.image,
+          instructions: data.instructions,
+          readyInMinutes: data.readyInMinutes
         };
       } else {
         console.error("Erreur lors de la requête :", data);
